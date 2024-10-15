@@ -1,53 +1,60 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   display: flex;
   flex-direction: column;
-  font-family: Poppins;
+  font-family: Raleway;
   height: 100vh;
 }
 
 header {
-  background-color: hsl(157, 100%, 32%);
+  background-color: #87DE87;
   display: flex;
   justify-content: space-between;
-  padding-block: 1rem;
-  padding-inline: 3rem;
   align-items: center;
+  padding-block: 1.5rem;
+  padding-inline: 6.75rem;
   width: 100%;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: black;
-  text-decoration: none;
+  height: 6.313rem;
 }
 
 .navbar ul {
   display: flex;
   list-style: none;
+  align-items: center;
 }
 .navbar ul li {
   margin-inline-start: 2rem;
 }
 .navbar ul li a {
+  font-size: 1.125rem;
+  font-weight: 600;
   text-decoration: none;
-  color: black;
+  color: #333333;
 }
 
 .header-btn {
-  padding: 0.4rem;
-  border-radius: 0.5rem;
+  background-color: #FFFFFF;
   border: none;
-  color: black;
-  font-weight: bold;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2509803922);
+  color: #333333;
+  font-weight: 700;
+  font-size: 1.125rem;
   cursor: pointer;
+  width: 8rem;
+  height: 2.5rem;
+  top: 1.875rem;
+  line-height: 1.321rem;
+  font-family: Raleway;
 }
 
 .hero-section {
@@ -67,20 +74,20 @@ header {
   left: 200px;
   width: 600px;
   height: 220px;
-  background-color: hsl(0, 0%, 21%);
+  background-color: #333333;
 }
 .hero-section .hero-section__info h1 {
-  color: white;
+  color: #FEFEFE;
   margin-block-start: 1rem;
   margin-block-end: 1.5rem;
   font-size: 2rem;
   font-weight: 400;
 }
 .hero-section .hero-section__info p {
-  color: white;
+  color: #FEFEFE;
 }
 .hero-section .hero-section__green-bar {
-  background-color: hsl(157, 100%, 32%);
+  background-color: #87DE87;
   width: 100px;
   height: 100%;
   margin-inline-end: 1rem;
@@ -93,7 +100,7 @@ header {
   padding: 5rem 3rem;
 }
 .card-section .card-section-header h1 {
-  color: white;
+  color: #333333;
   font-size: 2.5rem;
   margin-block-end: 3rem;
   text-align: center;
@@ -107,7 +114,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  background-color: hsl(0, 0%, 21%);
+  background-color: #333333;
   color: white;
   font-weight: 300;
 }
@@ -116,7 +123,7 @@ header {
   margin-block-end: 1rem;
 }
 .card-section .card-section__card .card-section__card--header .icon-container {
-  background-color: hsl(157, 100%, 32%);
+  background-color: #87DE87;
   border-radius: 3rem;
   padding: 1rem;
   display: flex;
@@ -130,16 +137,16 @@ header {
 }
 .card-section .card-section__card .card-section__card--header .card-section__card--title h3 {
   font-weight: 500;
-  color: white;
+  color: #FEFEFE;
 }
 .card-section .card-section__card .card-section__card--header .card-section__card--title h4 {
   font-weight: 300;
-  color: hsl(0, 0%, 80%);
+  color: #333333;
 }
 
 .more-section {
   width: 100%;
-  background-color: hsl(0, 0%, 21%);
+  background-color: #333333;
   padding: 2.5rem;
 }
 .more-section .more-section-header {
@@ -147,7 +154,7 @@ header {
   margin-block-end: 2rem;
 }
 .more-section .more-section-header h1 {
-  color: white;
+  color: #FEFEFE;
   font-size: 2rem;
   font-weight: 500;
 }
@@ -171,19 +178,19 @@ header {
   margin-inline: 10rem;
 }
 .more-section .more-section-subsection .subsection__content h2 {
-  color: white;
+  color: #FEFEFE;
   font-weight: 500;
   margin-block-end: 1rem;
 }
 .more-section .more-section-subsection .subsection__content p {
-  color: hsl(0, 0%, 80%);
+  color: #FEFEFE;
   font-size: 0.75rem;
 }
 .more-section .more-section-subsection .subsection__img {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: hsl(157, 100%, 32%);
+  background-color: #87DE87;
   width: 50%;
   height: fit-content;
   padding-inline-end: 2.5rem;
@@ -193,11 +200,10 @@ header {
   width: 100%;
 }
 .more-section .more-section-subsection .subsection-learn-more-btn {
-  border-radius: 0.5rem;
   border: none;
   cursor: pointer;
-  background-color: hsl(157, 77%, 43%);
-  color: black;
+  background-color: #87DE87;
+  color: #333333;
   padding: 1.25rem 2.5rem;
   font-weight: 600;
   font-size: 0.75rem;
@@ -214,7 +220,7 @@ header {
 }
 .email-section h1 {
   font-size: 2rem;
-  color: hsl(0, 0%, 21%);
+  color: #333333;
   margin-block-end: 1rem;
 }
 .email-section p {
@@ -224,8 +230,7 @@ header {
 .email-section .box {
   width: 500px;
   padding: 0.5rem;
-  border-radius: 0.5rem;
-  box-shadow: 0.15rem 0.15rem 1rem hsla(0, 0%, 0%, 0.5);
+  box-shadow: 0.15rem 0.15rem 1rem #333333;
 }
 .email-section .box .form-box {
   display: flex;
@@ -236,17 +241,16 @@ header {
   margin-inline-start: 0.5rem;
 }
 .email-section .box .form-box button {
-  background-color: hsl(157, 100%, 32%);
+  background-color: #87DE87;
   border: none;
   cursor: pointer;
   padding: 0.5rem;
-  border-radius: 0.5rem;
   font-weight: bold;
 }
 
 footer {
   width: 100%;
-  background-color: hsl(157, 100%, 32%);
+  background-color: #87DE87;
 }
 footer .footer-nav {
   padding: 3rem;
@@ -254,11 +258,11 @@ footer .footer-nav {
 }
 footer .footer-nav h1 {
   font-weight: 500;
-  color: hsl(0, 0%, 15%);
+  color: #333333;
 }
 footer .footer-nav h3 {
   font-size: 1rem;
-  color: hsl(0, 0%, 15%);
+  color: #333333;
 }
 footer .footer-nav .company-info {
   display: flex;
@@ -270,13 +274,13 @@ footer .footer-nav .products, footer .footer-nav .company {
 }
 footer .footer-nav .products a, footer .footer-nav .company a {
   text-decoration: none;
-  color: hsl(0, 0%, 15%);
+  color: #333333;
 }
 footer .footer-nav .social-media-icons {
   display: flex;
 }
 footer .footer-nav .social-media-icons .icon {
-  background-color: hsl(0, 0%, 15%);
+  background-color: #333333;
   height: 2rem;
   width: 2rem;
   display: flex;
@@ -287,7 +291,7 @@ footer .footer-nav .social-media-icons .icon {
 }
 footer .footer-info {
   width: 100%;
-  background-color: hsl(0, 0%, 15%);
+  background-color: #333333;
   display: flex;
   justify-content: space-between;
   align-items: center;
