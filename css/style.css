@@ -258,23 +258,32 @@ header {
 .email-section {
   width: 100%;
   display: flex;
-  padding: 5rem;
+  padding-block: 7.5rem;
   flex-direction: column;
   align-items: center;
 }
 .email-section h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #333333;
-  margin-block-end: 1rem;
+  font-weight: 700;
+  line-height: 3.522rem;
+  margin-block-end: 1.5rem;
+  text-align: center;
 }
 .email-section p {
+  color: #333333;
   text-align: center;
-  margin-block-end: 1.5rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.761rem;
+  margin-block-end: 4.375rem;
 }
 .email-section .box {
-  width: 500px;
+  width: 696px;
   padding: 0.5rem;
-  box-shadow: 0.15rem 0.15rem 1rem #333333;
+  border-radius: 0.75rem;
+  border: 1px solid #FEFEFE;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2509803922);
 }
 .email-section .box .form-box {
   display: flex;
@@ -282,14 +291,28 @@ header {
 }
 .email-section .box .form-box input {
   border: none;
-  margin-inline-start: 0.5rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.312rem;
+  margin-inline-start: 0.75rem;
+  width: 500px;
+}
+.email-section .box .form-box input:focus {
+  outline: none;
 }
 .email-section .box .form-box button {
   background-color: #87DE87;
   border: none;
   cursor: pointer;
-  padding: 0.5rem;
-  font-weight: bold;
+  border-radius: 0.75rem;
+  padding-block: 0.625rem;
+  padding-inline: 1.75rem;
+  font-weight: 700;
+  color: #333333;
+  font-size: 1.5rem;
+  line-height: 1.761rem;
+  text-align: center;
 }
 
 footer {
