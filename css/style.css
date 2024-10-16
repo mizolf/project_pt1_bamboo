@@ -119,40 +119,48 @@ header {
 .card-section .card-section-content {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 .card-section .card-section__card {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding-block: 2rem;
+  padding-inline: 2rem 2.125rem;
   background-color: #333333;
-  color: white;
-  font-weight: 300;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2509803922);
 }
 .card-section .card-section__card .card-section__card--header {
   display: flex;
-  margin-block-end: 1rem;
+  align-items: center;
+  margin-block-end: 1.063rem;
 }
 .card-section .card-section__card .card-section__card--header .icon-container {
   background-color: #87DE87;
-  border-radius: 3rem;
-  padding: 1rem;
+  border-radius: 5rem;
+  padding: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-inline-end: 2rem;
-}
-.card-section .card-section__card .card-section__card--header img {
-  width: 32px;
-  height: 32px;
+  margin-inline-end: 1.5rem;
 }
 .card-section .card-section__card .card-section__card--header .card-section__card--title h3 {
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1.5rem;
   color: #FEFEFE;
+  margin-block-end: 0.625rem;
 }
 .card-section .card-section__card .card-section__card--header .card-section__card--title h4 {
-  font-weight: 300;
-  color: #333333;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #FEFEFE;
+}
+.card-section .card-section__card .card-section__card--content p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.321rem;
+  color: #FEFEFE;
+  text-align: left;
 }
 
 .more-section {
