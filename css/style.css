@@ -323,7 +323,6 @@ footer .footer-nav {
   padding-inline-start: 6.75rem;
   padding-block-start: 3rem;
   padding-block-end: 6rem;
-  margin-inline-end: 3rem;
 }
 footer .footer-nav h2 {
   color: #333333;
@@ -356,24 +355,27 @@ footer .footer-nav .products, footer .footer-nav .company {
   display: flex;
   flex-direction: column;
 }
+footer .footer-nav .social-media {
+  margin-inline-end: 15.75rem;
+}
 footer .footer-nav .social-media h3 {
   color: #000000;
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 1.321rem;
+  margin-block-end: 1.125rem;
 }
 footer .footer-nav .social-media .social-media-icons {
   display: flex;
 }
 footer .footer-nav .social-media .social-media-icons .icon {
   background-color: #333333;
-  height: 2rem;
-  width: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5rem;
-  margin-inline-end: 1rem;
+  margin-inline-end: 1.5rem;
+  padding: 0.5rem;
 }
 footer .footer-info {
   width: 100%;
