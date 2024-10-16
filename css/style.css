@@ -320,33 +320,52 @@ footer {
   background-color: #87DE87;
 }
 footer .footer-nav {
-  padding: 3rem;
+  padding-inline-start: 6.75rem;
+  padding-block-start: 3rem;
+  padding-block-end: 6rem;
   margin-inline-end: 3rem;
 }
-footer .footer-nav h1 {
-  font-weight: 500;
+footer .footer-nav h2 {
   color: #333333;
+  margin-block-end: 0.625rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.761rem;
 }
 footer .footer-nav h3 {
-  font-size: 1rem;
   color: #333333;
+  margin-block-end: 0.625rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.321rem;
+}
+footer .footer-nav p, footer .footer-nav a {
+  color: #333333;
+  font-weight: 400;
+  font-size: 1.125rem;
+  margin-block-end: 0.625rem;
+  line-height: 1.321rem;
+  text-decoration: none;
 }
 footer .footer-nav .company-info {
   display: flex;
   justify-content: space-between;
+  margin-block-start: 1.5rem;
 }
 footer .footer-nav .products, footer .footer-nav .company {
   display: flex;
   flex-direction: column;
 }
-footer .footer-nav .products a, footer .footer-nav .company a {
-  text-decoration: none;
-  color: #333333;
+footer .footer-nav .social-media h3 {
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.321rem;
 }
-footer .footer-nav .social-media-icons {
+footer .footer-nav .social-media .social-media-icons {
   display: flex;
 }
-footer .footer-nav .social-media-icons .icon {
+footer .footer-nav .social-media .social-media-icons .icon {
   background-color: #333333;
   height: 2rem;
   width: 2rem;
@@ -362,22 +381,26 @@ footer .footer-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 5rem;
+  padding-inline: 6.75rem;
+  padding-block: 0.813rem;
 }
 footer .footer-info p {
-  color: white;
+  color: #FEFEFE;
+  font-weight: 400;
+  font-size: 1.125rem;
 }
 footer .footer-info ul {
   list-style-type: none;
   display: flex;
 }
 footer .footer-info ul li {
-  margin-inline-start: 1rem;
+  margin-inline-start: 2.25rem;
 }
 footer .footer-info ul li a {
   text-decoration: none;
-  color: white;
-  font-weight: 200;
+  color: #FEFEFE;
+  font-weight: 400;
+  font-size: 1.125rem;
 }
 
 /*# sourceMappingURL=style.css.map */

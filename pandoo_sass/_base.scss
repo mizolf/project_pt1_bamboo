@@ -361,42 +361,69 @@ footer{
     width: 100%;
     background-color: $green;
     .footer-nav{
-        padding:3rem;
+        padding-inline-start: 6.75rem; 
+        padding-block-start: 3rem;
+        padding-block-end: 6rem;
         margin-inline-end: 3rem;
 
-        h1{
-            font-weight: 500;
-            color: $grey;   
-        }
-        h3{
-            font-size: 1rem;
+        h2{
             color: $grey;
+            margin-block-end: 0.625rem;
+            font-weight: 600;
+            font-size: 1.5rem;
+            line-height: 1.761rem;
         }
+
+        h3{
+            color: $grey;
+            margin-block-end: 0.625rem;
+            font-weight: 600;
+            font-size: 1.125rem;
+            line-height: 1.321rem;
+        }
+
+        p, a{
+            color: $grey;
+            font-weight: 400;
+            font-size: 1.125rem;
+            margin-block-end: 0.625rem;
+            line-height: 1.321rem;
+            text-decoration: none;
+        }
+
 
         .company-info{
             display: flex;
             justify-content: space-between;
+            margin-block-start: 1.5rem;
         }
+
         .products, .company{
             display: flex;
             flex-direction: column;
-            a{
-                text-decoration: none;
-                color: $grey;
-            }
         }
-        .social-media-icons{
-            display: flex;
-            
-            .icon{
-                background-color: $grey;
-                height: 2rem;
-                width: 2rem;
+
+        .social-media{
+            h3{
+                color: #000000;
+                font-weight: 600;
+                font-size: 1.125rem;
+                line-height: 1.321rem;
+            }
+
+            .social-media-icons{
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 5rem;
-                margin-inline-end: 1rem;
+                
+                .icon{
+                    background-color: $grey;
+                    height: 2rem;
+                    width: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 5rem;
+                    margin-inline-end: 1rem;
+                }
             }
         }
         
@@ -408,19 +435,23 @@ footer{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0.5rem 5rem;
+        padding-inline: 6.75rem;
+        padding-block: 0.813rem;
         p{
-            color: white;
+            color: $white;
+            font-weight: 400;
+            font-size: 1.125rem;
         }
         ul{
             list-style-type: none;
             display: flex;
             li {
-                margin-inline-start: 1rem;
+                margin-inline-start: 2.25rem;
                 a{
                     text-decoration: none;
-                    color: white;
-                    font-weight: 200;
+                    color: $white;
+                    font-weight: 400;
+                    font-size: 1.125rem;
                 }
             }
         }
