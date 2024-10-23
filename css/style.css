@@ -108,8 +108,9 @@ header {
   .hero-section .hero-section__info {
     position: relative;
     width: 100%;
-    top: auto;
-    left: auto;
+    top: 0;
+    left: 0;
+    flex-direction: column;
   }
 }
 .hero-section .hero-section__info h1 {
@@ -118,6 +119,12 @@ header {
   font-size: 3rem;
   font-weight: 600;
   line-height: 3.522rem;
+}
+@media (max-width: 375px) {
+  .hero-section .hero-section__info h1 {
+    font-size: 2.25rem;
+    text-align: center;
+  }
 }
 .hero-section .hero-section__info p {
   color: #FEFEFE;
@@ -130,6 +137,11 @@ header {
   margin-inline-start: 1.5rem;
   margin-inline-end: 1.188rem;
 }
+@media (max-width: 375px) {
+  .hero-section .hero-section__info .hero-section__content {
+    margin-inline: 2rem;
+  }
+}
 .hero-section .hero-section__info .hero-section__green-bar {
   background-color: #87DE87;
   width: 2rem;
@@ -138,6 +150,10 @@ header {
 @media (max-width: 375px) {
   .hero-section {
     flex-direction: column;
+  }
+  .hero-section .hero-section__green-bar {
+    height: 3.063rem;
+    width: auto;
   }
 }
 
@@ -263,7 +279,7 @@ header {
 @media (max-width: 375px) {
   .more-section .more-section-subsection .subsection {
     flex-direction: column;
-    margin-inline-end: 0;
+    margin-inline-end: 0rem;
   }
 }
 .more-section .more-section-subsection .subsection .subsection__img {
@@ -315,10 +331,12 @@ header {
 @media (max-width: 375px) {
   .more-section .more-section-subsection .subsection__content {
     order: 1;
-    margin-inline-start: 2rem;
-    margin-inline-end: 2rem;
     width: 100%;
+    margin-inline: 0rem;
+    padding-inline: 2rem;
     margin-block-end: 1.5rem;
+    word-break: break-word;
+    text-overflow: ellipsis;
   }
   .more-section .more-section-subsection .subsection__content .subsection__content-title {
     font-size: 1.5rem;
@@ -341,7 +359,7 @@ header {
 }
 @media (max-width: 375px) {
   .more-section .more-section-subsection #subsection_reverse .subsection__content {
-    margin-inline: 2rem;
+    margin-inline: 0rem;
     margin-block-end: 0;
   }
 }
