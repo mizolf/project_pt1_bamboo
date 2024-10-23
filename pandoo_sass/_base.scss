@@ -1,3 +1,5 @@
+@use 'breakpoints' as *;
+
 *{
     margin: 0;
     padding: 0;
@@ -44,6 +46,12 @@ header{
     }   
 }
 
+.hamburger{
+    display: none;
+}
+
+
+
 .header-btn{
     background-color: #FFFFFF;
     border: none;
@@ -81,6 +89,13 @@ header{
         left: 196px;
         background-color: $grey;
         box-sizing: border-box;
+        @include respond-to(medium){
+            width: 60%;  
+        }
+        @include respond-to(small){
+            position: relative;
+            width: 100%;
+        }
 
         h1{
             color: $white;
@@ -118,7 +133,11 @@ header{
     display: flex;
     flex-direction: column;
     padding: 7.5rem 6.75rem;
-
+    @include respond-to(small){
+        padding-inline: 1.938rem;
+        padding-block-start: 3rem;
+        padding-block-end: 3.25rem;
+    }
 
     .card-section-header{
         h1{
@@ -127,13 +146,20 @@ header{
             font-weight: 700;
             margin-block-end: 5.375rem;
             text-align: center;
+            @include respond-to(small)
+            {
+                font-size: 2.25rem;
+                margin-block-end: 2rem;
+            }
         }
     }
     .card-section-content{
         display: flex;
         flex-direction: row;
         gap: 1.5rem;
-
+        @include respond-to(small){
+            flex-direction: column;
+        }
     }
 
     .card-section__card{
@@ -151,7 +177,10 @@ header{
             display: flex;
             align-items: center;
             margin-block-end: 1.063rem;
-            
+            @include respond-to(small){
+                flex-direction: column;
+            }
+
             .icon-container {
                 background-color: $green;
                 border-radius:5rem; 
