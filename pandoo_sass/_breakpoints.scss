@@ -1,0 +1,12 @@
+@mixin respond-to($breakpoint){
+    @if $breakpoint == small{
+        @media (max-width: 375px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == medium{
+        @media (max-width: 1000px) {
+            @content;
+        }
+    }
+}
