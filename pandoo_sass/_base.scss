@@ -27,10 +27,15 @@ header{
     padding-inline: 6.75rem;
     width: 100%;
     height: 6.313rem;
+    @include respond-to(small){
+        padding-inline: 2rem;
+        padding-block: 0;
+        height: 4rem;
+    }
 }
 
 .navbar{
-    ul{
+    .nav-items{
         display: flex;
         list-style: none;
         align-items: center;
@@ -43,13 +48,21 @@ header{
                 color: $grey;
             }
         }
-    }   
-}
+    } 
+    .hamburger{
+        display: none;
+    }
 
-.hamburger{
-    display: none;
-}
+    @include respond-to(small){
+        .nav-items{
+            display: none;
+        }
+        .hamburger{
+            display: block
+        }
 
+    }
+}
 
 
 .header-btn{
@@ -95,6 +108,8 @@ header{
         @include respond-to(small){
             position: relative;
             width: 100%;
+            top: auto;
+            left: auto;
         }
 
         h1{
@@ -124,7 +139,9 @@ header{
             height: auto;
         }
     }
-    
+    @include respond-to(small){
+        flex-direction: column;
+    }
 }
 
 
@@ -226,29 +243,43 @@ header{
     background-color: $grey;
     padding-block-start: 4rem;
 
+    @include respond-to(small){
+        padding-block: 3rem;
+    }
+
     .more-section-header{
         text-align: center;
         margin-block-end: 7.313rem;
-        h1{
+        .more-section-header-title{
             color: $white;
             font-size: 3rem;
             font-weight: 700;
             line-height: 3.522rem;
         } 
+
+        @include respond-to(small){
+            margin-block-end: 2.375rem;
+            .more-section-header-title{
+                font-size: 2.25rem;
+            }
+        }
     }
 
     .more-section-subsection{
         display: flex;
         flex-direction: column;
 
-        .subsection-normal{
+        .subsection{
             display: flex;
             margin-inline-end: 6.75rem;
+            @include respond-to(small){
+                flex-direction: column;
+                margin-inline-end: 0;
+            }
 
             .subsection__img{
                 display: flex;
                 background-color: $green;
-                width: 50%;
                 height: fit-content;
                 padding-inline-end: 2rem;
                 width: 696px;
@@ -258,32 +289,19 @@ header{
                     width: 664px;
                     height: 480px;
                 }
-            }  
-        }
-
-        #subsection_reverse{
-            flex-direction: row-reverse;
-            margin-inline-start: 6.75rem;
-            margin-block-start:8rem;
-  
-            .subsection__content{
-                margin-inline-start: 10.5rem; 
-            }
-
-            .subsection__img{
-                display: flex;
-                background-color: $green;
-                width: 50%;
-                height: fit-content;
-                padding-inline-start: 2rem;
-                width: 696px;
-                height: 480px;
-                
-                img {
-                    width: 664px;
-                    height: 480px;
+                @include respond-to(small){
+                    order: -1;
+                    width: 375px;
+                    height: 375px;
+                    padding-inline-end: 0rem;
+                    padding-block-end: 1rem;
+                    margin-block-end: 1.813rem;
+                    img{
+                        width: 375px;
+                        height: auto;
+                    }
                 }
-            }
+            }  
         }
 
         .subsection__content{
@@ -292,8 +310,7 @@ header{
             flex-direction: column;  
             margin-inline-start: 15.75rem; 
             margin-inline-end: 10.5rem; 
-
-            h2{
+            .subsection__content-title{
                 color: $white;
                 font-weight: 600;
                 font-size: 2.25rem;
@@ -305,6 +322,62 @@ header{
                 font-size: 1.125rem;
                 font-weight: 400;
                 line-height: 1.321rem;
+            }
+            @include respond-to(small){
+                order: 1;
+                margin-inline-start: 2rem;
+                margin-inline-end: 2rem;
+                width: 100%;
+                margin-block-end: 1.5rem;
+                .subsection__content-title{
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+            }
+        }
+
+        #subsection_reverse{
+            flex-direction: row-reverse;
+            margin-inline-start: 6.75rem;
+            margin-block-start:8rem;
+            @include respond-to(small){
+                margin-inline: 0;
+                margin-block: 0;
+            }
+            .subsection__content{
+                margin-inline-start: 10.5rem;
+                @include respond-to(small){
+                    margin-inline: 2rem;
+                    margin-block-end: 0;
+                }
+            }
+
+            .subsection__img{
+                display: flex;
+                background-color: $green;
+                height: fit-content;
+                padding-inline-start: 2rem;
+                width: 696px;
+                height: 480px;
+                
+                img {
+                    width: 664px;
+                    height: 480px;
+                }
+                @include respond-to(small){
+                    width: 375px;
+                    height: 375px;
+                    padding-inline-start: 0rem;
+                    padding-block-end: 1rem;
+                    margin-block-end: 1.813rem;
+                    img{
+                        width: 375px;
+                        height: auto;
+                    }
+                }
+            }
+            @include respond-to(small){
+                flex-direction: column;
             }
         }
 
@@ -333,6 +406,10 @@ header{
     padding-block: 7.5rem;
     flex-direction: column;
     align-items: center;
+    @include respond-to(small){
+        padding-block: 3rem;
+        overflow: auto;
+    }
 
     h1{
         font-size: 3rem;
@@ -358,6 +435,12 @@ header{
         border: 1px solid $white;
         box-shadow: 0px 0px 8px 0px #00000040;
 
+        @include respond-to(small){
+            width: 312px;
+            padding: 0;
+            border: none;
+        }
+
         .form-box{
             display: flex;
             justify-content: space-between;
@@ -370,6 +453,9 @@ header{
                 line-height: 1.312rem;
                 margin-inline-start: 0.75rem;
                 width: 500px;
+                @include respond-to(small){
+                    width: 200px;
+                }
                 &:focus{
                     outline: none;
                 }
@@ -388,11 +474,18 @@ header{
                 line-height: 1.761rem;
                 text-align: center;
                 text-transform: uppercase;
+
+                @include respond-to(small){
+                    font-size: 1.125rem;
+                    padding-inline: 1.5rem;
+                    padding-block: 1rem;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
             }
         }
     }
 }
-
 
 footer{
     width: 100%;
@@ -465,7 +558,12 @@ footer{
                 }
             }
         }
-        
+        @include respond-to(small){
+            .company-info{
+                display: flex;
+                flex-direction: column;
+            }
+        }
     }
 
     .footer-info{
