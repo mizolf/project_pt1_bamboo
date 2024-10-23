@@ -124,6 +124,7 @@ header {
   .hero-section .hero-section__info h1 {
     font-size: 2.25rem;
     text-align: center;
+    margin-block-end: 1rem;
   }
 }
 .hero-section .hero-section__info p {
@@ -132,6 +133,11 @@ header {
   font-size: 1.125rem;
   line-height: 1.321rem;
 }
+@media (max-width: 375px) {
+  .hero-section .hero-section__info p {
+    font-size: 1rem;
+  }
+}
 .hero-section .hero-section__info .hero-section__content {
   margin-block: 2rem;
   margin-inline-start: 1.5rem;
@@ -139,6 +145,7 @@ header {
 }
 @media (max-width: 375px) {
   .hero-section .hero-section__info .hero-section__content {
+    order: -1;
     margin-inline: 2rem;
   }
 }
@@ -148,12 +155,15 @@ header {
   height: auto;
 }
 @media (max-width: 375px) {
+  .hero-section .hero-section__info .hero-section__green-bar {
+    order: 1;
+    height: 3.063rem;
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
   .hero-section {
     flex-direction: column;
-  }
-  .hero-section .hero-section__green-bar {
-    height: 3.063rem;
-    width: auto;
   }
 }
 

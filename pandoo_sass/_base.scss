@@ -102,6 +102,7 @@ header{
         left: 196px;
         background-color: $grey;
         box-sizing: border-box;
+
         @include respond-to(medium){
             width: 60%;  
         }
@@ -123,6 +124,7 @@ header{
             @include respond-to(small){
                 font-size: 2.25rem;
                 text-align: center;
+                margin-block-end: 1rem;
             }
         }
 
@@ -131,6 +133,9 @@ header{
             font-weight: 400;
             font-size: 1.125rem;
             line-height: 1.321rem;
+            @include respond-to(small){
+                font-size: 1rem;
+            }
         }
 
         .hero-section__content{
@@ -138,6 +143,7 @@ header{
             margin-inline-start: 1.5rem;
             margin-inline-end: 1.188rem;
             @include respond-to(small){
+                order: -1;
                 margin-inline: 2rem;
             }
         }
@@ -146,14 +152,15 @@ header{
             background-color: $green;
             width: 2rem;
             height: auto;
+            @include respond-to(small){
+                order: 1;
+                height: 3.063rem;
+                width: 100%;
+            }
         }
     }
     @include respond-to(small){
         flex-direction: column;
-        .hero-section__green-bar{
-            height: 3.063rem;
-            width: auto;
-        }
     }
 }
 
