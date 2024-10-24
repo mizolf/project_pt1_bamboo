@@ -549,8 +549,13 @@ footer{
         padding-inline-start: 6.75rem; 
         padding-block-start: 3rem;
         padding-block-end: 6rem;
-        
 
+        @include respond-to(small){
+            padding-block: 0;
+            padding-inline: 0; 
+            text-align: center;
+        }
+    
         h2{
             color: $grey;
             margin-block-end: 0.625rem;
@@ -586,7 +591,9 @@ footer{
         .products, .company{
             display: flex;
             flex-direction: column;
-            
+            @include respond-to(small){
+                margin-block-end: 4rem;
+            }
         }
 
         .social-media{
@@ -612,11 +619,18 @@ footer{
                     padding: 0.5rem;
                 }
             }
+            @include respond-to(small){
+                margin-inline: 3.5rem;
+                margin-block-end: 3rem;
+            }
         }
         @include respond-to(small){
             .company-info{
                 display: flex;
                 flex-direction: column;
+            }
+            .company-name{
+                margin-block-end: 4rem;               
             }
         }
     }
@@ -629,22 +643,44 @@ footer{
         align-items: center;
         padding-inline: 6.75rem;
         padding-block: 0.813rem;
+
+        @include respond-to(small){
+            flex-direction: column;
+            padding-block: 1rem;
+            padding-inline: 0rem;
+            text-align: center;
+            gap: 0.75rem;
+        }
+
         p{
             color: $white;
             font-weight: 400;
             font-size: 1.125rem;
+
+            @include respond-to(small){
+                order: 1;
+                text-align: center;
+            }
         }
         ul{
             list-style-type: none;
             display: flex;
             li {
                 margin-inline-start: 2.25rem;
+                @include respond-to(small){
+                    margin-inline-start: 0.75rem;
+                }
+
                 a{
                     text-decoration: none;
                     color: $white;
                     font-weight: 400;
                     font-size: 1.125rem;
                 }
+            }
+            @include respond-to(small){
+                order: -1;
+                
             }
         }
     }
