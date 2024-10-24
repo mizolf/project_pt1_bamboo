@@ -446,6 +446,53 @@ header {
   text-transform: uppercase;
 }
 
+.images-section {
+  padding-block-start: 6rem;
+}
+.images-section .images-section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.522rem;
+  text-align: center;
+  color: #333333;
+}
+.images-section .images-container {
+  position: relative;
+}
+.images-section .slide-button {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #87DE87;
+  border: none;
+  padding: 1.125rem;
+}
+.images-section .slide-button svg {
+  color: #333333;
+}
+.images-section .slide-button#previous-slide {
+  top: calc(50% - 50px);
+  left: 133px;
+}
+.images-section .slide-button#next-slide {
+  top: calc(50% - 50px);
+  right: 133px;
+}
+.images-section .image-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-block-start: 6.875rem;
+  gap: 1.5rem;
+  overflow-x: auto;
+}
+.images-section .image-list::-webkit-scrollbar {
+  display: none;
+}
+.images-section .image-item {
+  width: 552px;
+  height: 321px;
+  object-fit: cover;
+}
+
 .email-section {
   width: 100%;
   display: flex;
