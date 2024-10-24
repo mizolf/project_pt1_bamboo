@@ -190,7 +190,7 @@ header {
 @media (min-width: 375px) {
   .card-section .card-section-header h1 {
     font-size: 2.25rem;
-    margin-block-end: 2rem;
+    margin-block-end: 5.75rem;
   }
 }
 .card-section .card-section-content {
@@ -201,6 +201,7 @@ header {
 @media (min-width: 375px) {
   .card-section .card-section-content {
     flex-direction: column;
+    gap: 5.75rem;
   }
 }
 .card-section .card-section__card {
@@ -211,6 +212,12 @@ header {
   background-color: #333333;
   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2509803922);
 }
+@media (min-width: 375px) {
+  .card-section .card-section__card {
+    padding: 0rem;
+    position: relative;
+  }
+}
 .card-section .card-section__card .card-section__card--header {
   display: flex;
   align-items: center;
@@ -219,6 +226,7 @@ header {
 @media (min-width: 375px) {
   .card-section .card-section__card .card-section__card--header {
     flex-direction: column;
+    margin-block-end: 0;
   }
 }
 .card-section .card-section__card .card-section__card--header .icon-container {
@@ -229,6 +237,13 @@ header {
   align-items: center;
   justify-content: center;
   margin-inline-end: 1.5rem;
+}
+@media (min-width: 375px) {
+  .card-section .card-section__card .card-section__card--header .icon-container {
+    position: absolute;
+    margin-inline: 0;
+    top: -60px;
+  }
 }
 .card-section .card-section__card .card-section__card--header .card-section__card--title h3 {
   font-weight: 600;
@@ -242,12 +257,24 @@ header {
   font-style: italic;
   color: #FEFEFE;
 }
+@media (min-width: 375px) {
+  .card-section .card-section__card .card-section__card--header .card-section__card--title {
+    text-align: center;
+    margin-block-start: 5.75rem;
+  }
+}
 .card-section .card-section__card .card-section__card--content p {
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.321rem;
   color: #FEFEFE;
   text-align: left;
+}
+@media (min-width: 375px) {
+  .card-section .card-section__card .card-section__card--content {
+    padding-inline: 1rem;
+    padding-block: 1.5rem;
+  }
 }
 
 .more-section {
