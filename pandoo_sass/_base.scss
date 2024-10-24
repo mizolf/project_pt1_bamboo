@@ -450,6 +450,7 @@ header{
     width: 100%;
     display: flex;
     padding-block: 7.5rem;
+    padding-inline: 33.75rem;
     flex-direction: column;
     align-items: center;
     @include respond-to(small){
@@ -656,10 +657,9 @@ footer{
             color: $white;
             font-weight: 400;
             font-size: 1.125rem;
-
+            line-height: 1.321rem;
             @include respond-to(small){
                 order: 1;
-                text-align: center;
             }
         }
         ul{
@@ -668,9 +668,8 @@ footer{
             li {
                 margin-inline-start: 2.25rem;
                 @include respond-to(small){
-                    margin-inline-start: 0.75rem;
+                    margin-inline: 0.75rem; 
                 }
-
                 a{
                     text-decoration: none;
                     color: $white;
@@ -680,7 +679,6 @@ footer{
             }
             @include respond-to(small){
                 order: -1;
-                
             }
         }
     }
