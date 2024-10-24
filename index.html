@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PanDoo</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.css">
 </head>
 <body>
     <header>
@@ -198,24 +200,30 @@
                 Section Title
             </h1>
             <div class="images-container">
-                <button class="slide-button" id="previous-slide">
-                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 32.0182C0 31.4842 0.219997 30.9742 0.585999 30.5902L20.384 10.5922C21.166 9.80224 22.432 9.80424 23.212 10.5922C23.994 11.3802 23.994 12.6602 23.212 13.4482L6.826 29.9982H62C63.104 29.9982 64 30.9022 64 32.0182C64 33.1342 63.104 34.0382 62 34.0382H6.828L23.212 50.5882C23.994 51.3762 23.992 52.6562 23.212 53.4442C22.43 54.2322 21.164 54.2322 20.384 53.4442L0.585999 33.4462C0.211998 33.0682 0.00600052 32.5482 0 32.0182Z" fill="#333333"/>
-                    </svg>                       
-                </button>
-                <div class="image-list">
-                    <img src="/images/picture-section-solar.jpeg" alt="Solar panels" class="image-item">
-                    <img src="/images/section-background.jpeg" alt="Windmills" class="image-item">
-                    <img src="/images/more-section-solar.jpeg" alt="Solar panels" class="image-item">
-                    <img src="/images/pictures-section-windmills.jpeg" alt="Windmills" class="image-item">
-                    <img src="/images/more-section-windmill.jpeg" alt="Windmills" class="image-item">
-                </div>
-                <button class="slide-button" id="next-slide">
-                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M64 32.0182C64 31.4842 63.78 30.9742 63.414 30.5902L43.616 10.5922C42.834 9.80224 41.568 9.80424 40.788 10.5922C40.006 11.3802 40.006 12.6602 40.788 13.4482L57.174 29.9982H2C0.896 29.9982 0 30.9022 0 32.0182C0 33.1342 0.896 34.0382 2 34.0382H57.172L40.788 50.5882C40.006 51.3762 40.008 52.6562 40.788 53.4442C41.57 54.2322 42.836 54.2322 43.616 53.4442L63.414 33.4462C63.788 33.0682 63.994 32.5482 64 32.0182Z" fill="#333333"/>
-                    </svg>      
-                </button>
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide"><img src="/images/picture-section-solar.jpeg" alt="Solar panels" class="image-item"></li>
+                        <li class="glide__slide"><img src="/images/section-background.jpeg" alt="Windmills" class="image-item"></li>
+                        <li class="glide__slide"><img src="/images/more-section-solar.jpeg" alt="Solar panels" class="image-item"></li>
+                        <li class="glide__slide"><img src="/images/pictures-section-windmills.jpeg" alt="Windmills" class="image-item"></li>
+                        <li class="glide__slide"><img src="/images/more-section-windmill.jpeg" alt="Windmills" class="image-item"></li>
+                    </ul>
+                    </div>
 
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 32.0182C0 31.4842 0.219997 30.9742 0.585999 30.5902L20.384 10.5922C21.166 9.80224 22.432 9.80424 23.212 10.5922C23.994 11.3802 23.994 12.6602 23.212 13.4482L6.826 29.9982H62C63.104 29.9982 64 30.9022 64 32.0182C64 33.1342 63.104 34.0382 62 34.0382H6.828L23.212 50.5882C23.994 51.3762 23.992 52.6562 23.212 53.4442C22.43 54.2322 21.164 54.2322 20.384 53.4442L0.585999 33.4462C0.211998 33.0682 0.00600052 32.5482 0 32.0182Z" fill="#333333"/>
+                            </svg> 
+                        </button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M64 32.0182C64 31.4842 63.78 30.9742 63.414 30.5902L43.616 10.5922C42.834 9.80224 41.568 9.80424 40.788 10.5922C40.006 11.3802 40.006 12.6602 40.788 13.4482L57.174 29.9982H2C0.896 29.9982 0 30.9022 0 32.0182C0 33.1342 0.896 34.0382 2 34.0382H57.172L40.788 50.5882C40.006 51.3762 40.008 52.6562 40.788 53.4442C41.57 54.2322 42.836 54.2322 43.616 53.4442L63.414 33.4462C63.788 33.0682 63.994 32.5482 64 32.0182Z" fill="#333333"/>
+                            </svg>    
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -310,5 +318,21 @@
         </div>
     </footer>
     <script src="/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        const config = {
+            type: 'carousel',
+            perView: 3.25,
+            focusAt: 'center',
+            startAt: 2,
+            gap: 24,
+            breakpoints: {
+                375: {
+                    perView: 1.2
+                }
+            }
+        }
+        new Glide('.glide', config).mount()         
+    </script>
 </body>
 </html>
