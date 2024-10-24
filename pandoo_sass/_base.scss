@@ -454,7 +454,7 @@ header{
     align-items: center;
     @include respond-to(small){
         padding-block: 3rem;
-        overflow: auto;
+        padding-inline: 2rem;
     }
 
     h1{
@@ -464,7 +464,11 @@ header{
         line-height: 3.522rem;
         margin-block-end: 1.5rem;
         text-align: center;
+        @include respond-to(small){
+            margin-block-end: 1.875rem;
+        }
     }
+
     p{
         color: $grey;
         text-align: center;
@@ -472,6 +476,11 @@ header{
         font-size: 1.5rem;
         line-height: 1.761rem;
         margin-block-end: 4.375rem;
+        @include respond-to(small){
+            font-size: 1rem;
+            line-height: 1.174rem;
+            margin-block-end: 2rem;
+        }
     }
 
     .box{
@@ -482,7 +491,7 @@ header{
         box-shadow: 0px 0px 8px 0px #00000040;
 
         @include respond-to(small){
-            width: 312px;
+            width: auto;
             padding: 0;
             border: none;
         }
@@ -498,9 +507,9 @@ header{
                 font-style: italic;
                 line-height: 1.312rem;
                 margin-inline-start: 0.75rem;
-                width: 500px;
+                width: auto;
                 @include respond-to(small){
-                    width: 200px;
+                    width: auto;
                 }
                 &:focus{
                     outline: none;

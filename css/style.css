@@ -456,7 +456,7 @@ header {
 @media (min-width: 375px) {
   .email-section {
     padding-block: 3rem;
-    overflow: auto;
+    padding-inline: 2rem;
   }
 }
 .email-section h1 {
@@ -467,6 +467,11 @@ header {
   margin-block-end: 1.5rem;
   text-align: center;
 }
+@media (min-width: 375px) {
+  .email-section h1 {
+    margin-block-end: 1.875rem;
+  }
+}
 .email-section p {
   color: #333333;
   text-align: center;
@@ -474,6 +479,13 @@ header {
   font-size: 1.5rem;
   line-height: 1.761rem;
   margin-block-end: 4.375rem;
+}
+@media (min-width: 375px) {
+  .email-section p {
+    font-size: 1rem;
+    line-height: 1.174rem;
+    margin-block-end: 2rem;
+  }
 }
 .email-section .box {
   width: 696px;
@@ -484,7 +496,7 @@ header {
 }
 @media (min-width: 375px) {
   .email-section .box {
-    width: 312px;
+    width: auto;
     padding: 0;
     border: none;
   }
@@ -500,11 +512,11 @@ header {
   font-style: italic;
   line-height: 1.312rem;
   margin-inline-start: 0.75rem;
-  width: 500px;
+  width: auto;
 }
 @media (min-width: 375px) {
   .email-section .box .form-box input {
-    width: 200px;
+    width: auto;
   }
 }
 .email-section .box .form-box input:focus {
