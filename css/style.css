@@ -445,6 +445,11 @@ header {
   margin-block: 6rem;
   text-transform: uppercase;
 }
+@media (max-width: 375px) {
+  .more-section .more-section-subsection .subsection-learn-more-btn {
+    display: none;
+  }
+}
 
 .images-section {
   padding-block-start: 6rem;

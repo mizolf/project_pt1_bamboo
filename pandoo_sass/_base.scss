@@ -441,6 +441,9 @@ header{
             align-self: center;
             margin-block: 6rem;
             text-transform: uppercase;
+            @include respond-to(small){
+                display: none;
+            }
         }
     }
 }
