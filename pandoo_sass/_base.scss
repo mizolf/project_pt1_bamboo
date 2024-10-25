@@ -32,6 +32,11 @@ header{
         padding-block: 0;
         height: 4rem;
     }
+    @include respond-to(medium){
+        padding-inline: 3rem;
+        padding-block: 0;
+        height: 4rem;
+    }
 }
 
 .navbar{
@@ -60,7 +65,14 @@ header{
         .hamburger{
             display: block
         }
-
+    }
+    @include respond-to(medium){
+        .nav-items{
+            display: none;
+        }
+        .hamburger{
+            display: block
+        }
     }
 }
 
@@ -90,6 +102,9 @@ header{
     @include respond-to(small){
         flex-direction: column;
     }
+    @include respond-to(medium){
+        flex-direction: column;
+    }
 
     .hero-section__img{
         height: 100%;
@@ -117,8 +132,15 @@ header{
             top: 0;
             left: 0;
             flex-direction: column;
-
         }
+        @include respond-to(medium){
+            position: relative;
+            width: 100%;
+            top: 0;
+            left: 0;
+            flex-direction: column;
+        }
+        
 
         h1{
             color: $white;
@@ -127,6 +149,11 @@ header{
             font-weight: 600;
             line-height: 3.522rem;
             @include respond-to(small){
+                font-size: 2.25rem;
+                text-align: center;
+                margin-block-end: 1rem;
+            }
+            @include respond-to(medium){
                 font-size: 2.25rem;
                 text-align: center;
                 margin-block-end: 1rem;
@@ -141,6 +168,9 @@ header{
             @include respond-to(small){
                 font-size: 1rem;
             }
+            @include respond-to(medium){
+                font-size: 1rem;
+            }
         }
 
         .hero-section__content{
@@ -151,6 +181,10 @@ header{
                 order: -1;
                 margin-inline: 2rem;
             }
+            @include respond-to(medium){
+                order: -1;
+                margin-inline: 2rem;
+            }
         }
 
         .hero-section__green-bar{
@@ -158,6 +192,11 @@ header{
             width: 2rem;
             height: auto;
             @include respond-to(small){
+                order: 1;
+                height: 3.063rem;
+                width: 100%;
+            }
+            @include respond-to(medium){
                 order: 1;
                 height: 3.063rem;
                 width: 100%;
@@ -178,6 +217,11 @@ header{
         padding-block-start: 3rem;
         padding-block-end: 3.25rem;
     }
+    @include respond-to(medium){
+        padding-inline: 1.938rem;
+        padding-block-start: 3rem;
+        padding-block-end: 3.25rem;
+    }
 
     .card-section-header{
         h1{
@@ -191,6 +235,11 @@ header{
                 font-size: 2.25rem;
                 margin-block-end: 5.75rem;
             }
+            @include respond-to(medium)
+            {
+                font-size: 2.25rem;
+                margin-block-end: 5.75rem;
+            }
         }
     }
     
@@ -199,6 +248,10 @@ header{
         flex-direction: row;
         gap: 1.5rem;
         @include respond-to(small){
+            flex-direction: column;
+            gap: 5.75rem;
+        }
+        @include respond-to(medium){
             flex-direction: column;
             gap: 5.75rem;
         }
@@ -271,7 +324,6 @@ header{
                 text-align: left;
             }
             @include respond-to(small){
-
                 padding-inline: 1rem;
                 padding-block: 1.5rem;
             }
@@ -287,6 +339,9 @@ header{
     padding-block-start: 4rem;
 
     @include respond-to(small){
+        padding-block: 3rem;
+    }
+    @include respond-to(medium){
         padding-block: 3rem;
     }
 
@@ -306,6 +361,12 @@ header{
                 font-size: 2.25rem;
             }
         }
+        @include respond-to(medium){
+            margin-block-end: 2.375rem;
+            .more-section-header-title{
+                font-size: 2.25rem;
+            }
+        }
     }
 
     .more-section-subsection{
@@ -316,6 +377,10 @@ header{
             display: flex;
             margin-inline-end: 6.75rem;
             @include respond-to(small){
+                flex-direction: column;
+                margin-inline-end: 0rem;
+            }
+            @include respond-to(medium){
                 flex-direction: column;
                 margin-inline-end: 0rem;
             }
@@ -341,6 +406,18 @@ header{
                     margin-block-end: 1.813rem;
                     img{
                         width: 375px;
+                        height: auto;
+                    }
+                }
+                @include respond-to(medium){
+                    order: -1;
+                    width: 100%;
+                    height: 500px;
+                    padding-inline-end: 0rem;
+                    padding-block-end: 1rem;
+                    margin-block-end: 1.813rem;
+                    img{
+                        width: 100%;
                         height: auto;
                     }
                 }
@@ -380,6 +457,19 @@ header{
                     text-align: center;
                 }
             }
+            @include respond-to(medium){
+                order: 1;
+                width: 100%;
+                margin-inline: 0rem;
+                padding-inline: 2rem;
+                margin-block-end: 1.5rem;
+                word-break: break-word;
+                text-overflow: ellipsis;
+                .subsection__content-title{
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+            }
         }
 
         #subsection_reverse{
@@ -390,9 +480,17 @@ header{
                 margin-inline: 0;
                 margin-block: 0;
             }
+            @include respond-to(medium){
+                margin-inline: 0;
+                margin-block: 0;
+            }
             .subsection__content{
                 margin-inline-start: 10.5rem;
                 @include respond-to(small){
+                    margin-inline: 0rem;
+                    margin-block-end: 0;
+                }
+                @include respond-to(medium){
                     margin-inline: 0rem;
                     margin-block-end: 0;
                 }
@@ -421,8 +519,22 @@ header{
                         height: auto;
                     }
                 }
+                @include respond-to(medium){
+                    width: 100%;
+                    height: 500px;
+                    padding-inline-start: 0rem;
+                    padding-block-end: 1rem;
+                    margin-block-end: 1.813rem;
+                    img{
+                        width:100%;
+                        height: auto;
+                    }
+                }
             }
             @include respond-to(small){
+                flex-direction: column;
+            }
+            @include respond-to(medium){
                 flex-direction: column;
             }
         }
@@ -443,6 +555,10 @@ header{
             text-transform: uppercase;
             @include respond-to(small){
                 display: none;
+            }
+            @include respond-to(medium){
+                display: block;
+                margin-block: 2rem 0;
             }
         }
     }
@@ -528,6 +644,10 @@ header{
         padding-block: 3rem;
         padding-inline: 2rem;
     }
+    @include respond-to(medium){
+        padding-block: 3rem;
+        padding-inline: 2rem;
+    }
 
     h1{
         font-size: 3rem;
@@ -537,6 +657,9 @@ header{
         margin-block-end: 1.5rem;
         text-align: center;
         @include respond-to(small){
+            margin-block-end: 1.875rem;
+        }
+        @include respond-to(medium){
             margin-block-end: 1.875rem;
         }
     }
@@ -549,6 +672,11 @@ header{
         line-height: 1.761rem;
         margin-block-end: 4.375rem;
         @include respond-to(small){
+            font-size: 1rem;
+            line-height: 1.174rem;
+            margin-block-end: 2rem;
+        }
+        @include respond-to(medium){
             font-size: 1rem;
             line-height: 1.174rem;
             margin-block-end: 2rem;
@@ -567,6 +695,12 @@ header{
             padding: 0;
             border: none;
         }
+        @include respond-to(medium){
+            width: 70%;
+            padding: 0;
+            border: none;
+            text-align: center;
+        }
 
         .form-box{
             display: flex;
@@ -581,6 +715,9 @@ header{
                 margin-inline-start: 0.75rem;
                 width: auto;
                 @include respond-to(small){
+                    width: auto;
+                }
+                @include respond-to(medium){
                     width: auto;
                 }
                 &:focus{
@@ -609,6 +746,13 @@ header{
                     border-top-left-radius: 0;
                     border-bottom-left-radius: 0;
                 }
+                @include respond-to(medium){
+                    font-size: 1.125rem;
+                    padding-inline: 1.5rem;
+                    padding-block: 1rem;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
             }
         }
     }
@@ -623,6 +767,11 @@ footer{
         padding-block-end: 6rem;
 
         @include respond-to(small){
+            padding-block: 0;
+            padding-inline: 0; 
+            text-align: center;
+        }
+        @include respond-to(medium){
             padding-block: 0;
             padding-inline: 0; 
             text-align: center;
@@ -666,6 +815,9 @@ footer{
             @include respond-to(small){
                 margin-block-end: 4rem;
             }
+            @include respond-to(medium){
+                margin-block-end: 4rem;
+            }
         }
 
         .social-media{
@@ -689,14 +841,51 @@ footer{
                     border-radius: 5rem;
                     margin-inline-end: 1.5rem;
                     padding: 0.5rem;
+                    @include respond-to(small){
+                        margin-inline-end: 1.5rem;
+                    }
+                    @include respond-to(medium){
+                        margin-inline-end: 0; 
+                    }
+                }
+                @include respond-to(small){
+                    margin-inline-start: 3.5rem;
+                    margin-inline-end: 2rem;
+                    margin-block-end: 3rem;
+                }
+                @include respond-to(medium){
+                    width: 70%;
+                    justify-content: space-around;
+                    margin-inline: 0;
                 }
             }
             @include respond-to(small){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-inline: 3.5rem;
+                margin-block-end: 3rem;
+            }
+            @include respond-to(medium){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 margin-inline: 3.5rem;
                 margin-block-end: 3rem;
             }
         }
         @include respond-to(small){
+            .company-info{
+                display: flex;
+                flex-direction: column;
+            }
+            .company-name{
+                margin-block-end: 4rem;               
+            }
+        }
+        @include respond-to(medium){
             .company-info{
                 display: flex;
                 flex-direction: column;
@@ -723,6 +912,10 @@ footer{
             text-align: center;
             gap: 0.75rem;
         }
+        @include respond-to(medium){
+            flex-direction: row;
+            padding-inline: 1rem;
+        }
 
         p{
             color: $white;
@@ -731,6 +924,9 @@ footer{
             line-height: 1.321rem;
             @include respond-to(small){
                 order: 1;
+            }
+            @include respond-to(medium){
+                order: -1;
             }
         }
         ul{
@@ -741,6 +937,9 @@ footer{
                 @include respond-to(small){
                     margin-inline: 0.75rem; 
                 }
+                @include respond-to(medium){
+                    margin-inline: 2rem 0rem; 
+                }
                 a{
                     text-decoration: none;
                     color: $white;
@@ -750,6 +949,9 @@ footer{
             }
             @include respond-to(small){
                 order: -1;
+            }
+            @include respond-to(medium){
+                order: 1;
             }
         }
     }
