@@ -33,7 +33,7 @@ header {
     height: 4rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   header {
     padding-inline: 3rem;
     padding-block: 0;
@@ -66,7 +66,7 @@ header {
     display: block;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .navbar .nav-items {
     display: none;
   }
@@ -102,9 +102,10 @@ header {
     flex-direction: column;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .hero-section {
     flex-direction: column;
+    margin-block-end: 3.063rem;
   }
 }
 .hero-section .hero-section__img {
@@ -124,11 +125,6 @@ header {
   background-color: #333333;
   box-sizing: border-box;
 }
-@media (min-width: 425px) and (max-width: 768px) {
-  .hero-section .hero-section__info {
-    width: 60%;
-  }
-}
 @media (min-width: 375px) and (max-width: 425px) {
   .hero-section .hero-section__info {
     position: relative;
@@ -138,7 +134,7 @@ header {
     flex-direction: column;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .hero-section .hero-section__info {
     position: relative;
     width: 100%;
@@ -161,7 +157,7 @@ header {
     margin-block-end: 1rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .hero-section .hero-section__info h1 {
     font-size: 2.25rem;
     text-align: center;
@@ -179,7 +175,7 @@ header {
     font-size: 1rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .hero-section .hero-section__info p {
     font-size: 1rem;
   }
@@ -195,7 +191,7 @@ header {
     margin-inline: 2rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .hero-section .hero-section__info .hero-section__content {
     order: -1;
     margin-inline: 2rem;
@@ -213,7 +209,7 @@ header {
     width: 100%;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .hero-section .hero-section__info .hero-section__green-bar {
     order: 1;
     height: 3.063rem;
@@ -234,7 +230,7 @@ header {
     padding-block-end: 3.25rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .card-section {
     padding-inline: 1.938rem;
     padding-block-start: 3rem;
@@ -254,10 +250,11 @@ header {
     margin-block-end: 5.75rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .card-section .card-section-header h1 {
     font-size: 2.25rem;
-    margin-block-end: 5.75rem;
+    margin-block-start: 3.063rem;
+    margin-block-end: 2rem;
   }
 }
 .card-section .card-section-content {
@@ -271,7 +268,7 @@ header {
     gap: 5.75rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .card-section .card-section-content {
     flex-direction: column;
     gap: 5.75rem;
@@ -360,7 +357,7 @@ header {
     padding-block: 3rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .more-section {
     padding-block: 3rem;
   }
@@ -383,7 +380,7 @@ header {
     font-size: 2.25rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .more-section .more-section-header {
     margin-block-end: 2.375rem;
   }
@@ -405,7 +402,7 @@ header {
     margin-inline-end: 0rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .more-section .more-section-subsection .subsection {
     flex-direction: column;
     margin-inline-end: 0rem;
@@ -426,18 +423,18 @@ header {
 @media (min-width: 375px) and (max-width: 425px) {
   .more-section .more-section-subsection .subsection .subsection__img {
     order: -1;
-    width: 375px;
+    width: 100%;
     height: 375px;
     padding-inline-end: 0rem;
     padding-block-end: 1rem;
     margin-block-end: 1.813rem;
   }
   .more-section .more-section-subsection .subsection .subsection__img img {
-    width: 375px;
+    width: 100%;
     height: auto;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .more-section .more-section-subsection .subsection .subsection__img {
     order: -1;
     width: 100%;
@@ -486,7 +483,7 @@ header {
     text-align: center;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .more-section .more-section-subsection .subsection__content {
     order: 1;
     width: 100%;
@@ -512,7 +509,7 @@ header {
     margin-block: 0;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .more-section .more-section-subsection #subsection_reverse {
     margin-inline: 0;
     margin-block: 0;
@@ -527,7 +524,7 @@ header {
     margin-block-end: 0;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .more-section .more-section-subsection #subsection_reverse .subsection__content {
     margin-inline: 0rem;
     margin-block-end: 0;
@@ -547,18 +544,18 @@ header {
 }
 @media (min-width: 375px) and (max-width: 425px) {
   .more-section .more-section-subsection #subsection_reverse .subsection__img {
-    width: 375px;
+    width: 100%;
     height: 375px;
     padding-inline-start: 0rem;
     padding-block-end: 1rem;
     margin-block-end: 1.813rem;
   }
   .more-section .more-section-subsection #subsection_reverse .subsection__img img {
-    width: 375px;
+    width: 100%;
     height: auto;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .more-section .more-section-subsection #subsection_reverse .subsection__img {
     width: 100%;
     height: 500px;
@@ -576,7 +573,7 @@ header {
     flex-direction: column;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .more-section .more-section-subsection #subsection_reverse {
     flex-direction: column;
   }
@@ -601,7 +598,7 @@ header {
     display: none;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .more-section .more-section-subsection .subsection-learn-more-btn {
     display: block;
     margin-block: 2rem 0;
@@ -637,14 +634,26 @@ header {
     margin-block-start: 3rem;
   }
 }
+.images-section .glide__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 .images-section .image-item {
   width: 552px;
-  height: 321px;
+  max-height: 321px;
   object-fit: cover;
 }
 @media (min-width: 375px) and (max-width: 425px) {
   .images-section .image-item {
     width: 312px;
+    height: 321px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .images-section .image-item {
+    width: 100%;
     height: 321px;
   }
 }
@@ -665,6 +674,16 @@ header {
     width: 22px;
   }
 }
+@media (min-width: 426px) and (max-width: 768px) {
+  .images-section .glide__arrow {
+    padding: 0.36rem;
+    background-color: #FEFEFE;
+  }
+  .images-section .glide__arrow svg {
+    height: 22px;
+    width: 22px;
+  }
+}
 .images-section .glide__arrow--left {
   left: 133px;
 }
@@ -673,12 +692,22 @@ header {
     left: 37px;
   }
 }
+@media (min-width: 426px) and (max-width: 768px) {
+  .images-section .glide__arrow--left {
+    left: 70px;
+  }
+}
 .images-section .glide__arrow--right {
   right: 133px;
 }
 @media (min-width: 375px) and (max-width: 425px) {
   .images-section .glide__arrow--right {
     right: 37px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .images-section .glide__arrow--right {
+    right: 70px;
   }
 }
 
@@ -696,7 +725,7 @@ header {
     padding-inline: 2rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .email-section {
     padding-block: 3rem;
     padding-inline: 2rem;
@@ -715,7 +744,7 @@ header {
     margin-block-end: 1.875rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .email-section h1 {
     margin-block-end: 1.875rem;
   }
@@ -735,7 +764,7 @@ header {
     margin-block-end: 2rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .email-section p {
     font-size: 1rem;
     line-height: 1.174rem;
@@ -756,7 +785,7 @@ header {
     border: none;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .email-section .box {
     width: 70%;
     padding: 0;
@@ -782,7 +811,7 @@ header {
     width: auto;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .email-section .box .form-box input {
     width: auto;
   }
@@ -813,7 +842,7 @@ header {
     border-bottom-left-radius: 0;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .email-section .box .form-box button {
     font-size: 1.125rem;
     padding-inline: 1.5rem;
@@ -839,7 +868,7 @@ footer .footer-nav {
     text-align: center;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   footer .footer-nav {
     padding-block: 0;
     padding-inline: 0;
@@ -882,7 +911,7 @@ footer .footer-nav .products, footer .footer-nav .company {
     margin-block-end: 4rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   footer .footer-nav .products, footer .footer-nav .company {
     margin-block-end: 4rem;
   }
@@ -914,7 +943,7 @@ footer .footer-nav .social-media .social-media-icons .icon {
     margin-inline-end: 1.5rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   footer .footer-nav .social-media .social-media-icons .icon {
     margin-inline-end: 0;
   }
@@ -926,7 +955,7 @@ footer .footer-nav .social-media .social-media-icons .icon {
     margin-block-end: 3rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   footer .footer-nav .social-media .social-media-icons {
     width: 70%;
     justify-content: space-around;
@@ -943,7 +972,7 @@ footer .footer-nav .social-media .social-media-icons .icon {
     margin-block-end: 3rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   footer .footer-nav .social-media {
     display: flex;
     flex-direction: column;
@@ -962,7 +991,7 @@ footer .footer-nav .social-media .social-media-icons .icon {
     margin-block-end: 4rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   footer .footer-nav .company-info {
     display: flex;
     flex-direction: column;
@@ -989,7 +1018,7 @@ footer .footer-info {
     gap: 0.75rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   footer .footer-info {
     flex-direction: row;
     padding-inline: 1rem;
@@ -1006,7 +1035,7 @@ footer .footer-info p {
     order: 1;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   footer .footer-info p {
     order: -1;
   }
@@ -1023,7 +1052,7 @@ footer .footer-info ul li {
     margin-inline: 0.75rem;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   footer .footer-info ul li {
     margin-inline: 2rem 0rem;
   }
@@ -1039,7 +1068,7 @@ footer .footer-info ul li a {
     order: -1;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   footer .footer-info ul {
     order: 1;
   }

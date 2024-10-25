@@ -104,6 +104,7 @@ header{
     }
     @include respond-to(medium){
         flex-direction: column;
+        margin-block-end: 3.063rem;
     }
 
     .hero-section__img{
@@ -122,10 +123,6 @@ header{
         left: 196px;
         background-color: $grey;
         box-sizing: border-box;
-
-        @include respond-to(medium){
-            width: 60%;  
-        }
         @include respond-to(small){
             position: relative;
             width: 100%;
@@ -238,7 +235,8 @@ header{
             @include respond-to(medium)
             {
                 font-size: 2.25rem;
-                margin-block-end: 5.75rem;
+                margin-block-start: 3.063rem;
+                margin-block-end:2rem;
             }
         }
     }
@@ -269,6 +267,7 @@ header{
             padding: 0rem; 
             position: relative;        
         }
+        
 
         .card-section__card--header{
             display: flex;
@@ -399,13 +398,13 @@ header{
                 }
                 @include respond-to(small){
                     order: -1;
-                    width: 375px;
+                    width: 100%;
                     height: 375px;
                     padding-inline-end: 0rem;
                     padding-block-end: 1rem;
                     margin-block-end: 1.813rem;
                     img{
-                        width: 375px;
+                        width: 100%;
                         height: auto;
                     }
                 }
@@ -509,13 +508,13 @@ header{
                     height: 480px;
                 }
                 @include respond-to(small){
-                    width: 375px;
+                    width: 100%;
                     height: 375px;
                     padding-inline-start: 0rem;
                     padding-block-end: 1rem;
                     margin-block-end: 1.813rem;
                     img{
-                        width: 375px;
+                        width: 100%;
                         height: auto;
                     }
                 }
@@ -590,12 +589,23 @@ header{
         }
     }
 
+    .glide__slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
     .image-item{
         width: 552px;
-        height: 321px;    
+        max-height: 321px;    
         object-fit: cover;
         @include respond-to(small){
             width: 312px;
+            height: 321px;
+        }
+        @include respond-to(medium){
+            width: 100%;
             height: 321px;
         }
     }
@@ -615,6 +625,14 @@ header{
             }
             background-color: $white;
         }
+        @include respond-to(medium){
+            padding: 0.36rem;
+            svg{
+                height: 22px;
+                width: 22px;
+            }
+            background-color: $white;
+        }
     }
 
     .glide__arrow--left{
@@ -622,12 +640,18 @@ header{
         @include respond-to(small){
             left: 37px
         }
+        @include respond-to(medium){
+            left: 70px
+        }
     }
 
     .glide__arrow--right{
         right: 133px;
         @include respond-to(small){
             right: 37px;
+        }
+        @include respond-to(medium){
+            right: 70px;
         }
     }
 }
