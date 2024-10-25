@@ -688,7 +688,7 @@ header{
 
     .image-item{
         width: 552px;
-        max-height: 321px;    
+        height: 321px;    
         object-fit: cover;
         @include respond-to(small){
             width: 312px;

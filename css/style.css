@@ -769,7 +769,7 @@ header {
 }
 .images-section .image-item {
   width: 552px;
-  max-height: 321px;
+  height: 321px;
   object-fit: cover;
 }
 @media (min-width: 375px) and (max-width: 425px) {

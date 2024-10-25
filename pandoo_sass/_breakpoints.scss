@@ -5,17 +5,17 @@
         }
     }
     @else if $breakpoint == medium{
-        @media (min-width: 426px) and (max-width: 850px){
+        @media (min-width: 426px) and (max-width: 920px){
             @content;
         }
     }
     @else if $breakpoint == large{
-        @media (max-width: 1024px) {
+        @media (min-width: 921px) and (max-width: 1440px) {
             @content;
         }
     }
     @else if $breakpoint == xlarge{
-        @media (max-width: 1440px) {
+        @media (min-width: 1441px) and (max-width: 1920px){
             @content;
         }
     }
