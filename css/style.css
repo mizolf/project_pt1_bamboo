@@ -456,6 +456,11 @@ header {
     margin-inline-end: 2rem;
   }
 }
+@media (min-width: 1441px) and (max-width: 1750px) {
+  .more-section .more-section-subsection .subsection {
+    margin-inline-end: 2rem;
+  }
+}
 .more-section .more-section-subsection .subsection .subsection__img {
   display: flex;
   background-color: #87DE87;
@@ -570,6 +575,20 @@ header {
     text-align: center;
   }
 }
+@media (min-width: 1441px) and (max-width: 1750px) {
+  .more-section .more-section-subsection .subsection__content {
+    width: 50%;
+    margin-inline: 0 2.5rem;
+    padding-inline: 3rem;
+    margin-block-end: 1.5rem;
+    word-break: break-word;
+    text-overflow: ellipsis;
+  }
+  .more-section .more-section-subsection .subsection__content .subsection__content-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
 .more-section .more-section-subsection #subsection_reverse {
   flex-direction: row-reverse;
   margin-inline-start: 6.75rem;
@@ -593,6 +612,12 @@ header {
     margin-block: 0;
   }
 }
+@media (min-width: 1441px) and (max-width: 1750px) {
+  .more-section .more-section-subsection #subsection_reverse {
+    margin-inline: 1.5rem 0;
+    margin-block-start: 4rem;
+  }
+}
 .more-section .more-section-subsection #subsection_reverse .subsection__content {
   margin-inline-start: 10.5rem;
 }
@@ -611,6 +636,13 @@ header {
 @media (min-width: 921px) and (max-width: 1440px) {
   .more-section .more-section-subsection #subsection_reverse .subsection__content {
     margin-inline: 0rem;
+    margin-block-end: 0;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1750px) {
+  .more-section .more-section-subsection #subsection_reverse .subsection__content {
+    margin-inline-start: 2.5rem;
+    margin-inline-end: 0;
     margin-block-end: 0;
   }
 }
@@ -661,6 +693,11 @@ header {
   .more-section .more-section-subsection #subsection_reverse .subsection__img img {
     width: 100%;
     height: auto;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1750px) {
+  .more-section .more-section-subsection #subsection_reverse .subsection__img {
+    margin-inline-start: 0;
   }
 }
 @media (min-width: 375px) and (max-width: 425px) {
